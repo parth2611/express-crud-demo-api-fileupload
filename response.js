@@ -1,7 +1,7 @@
  
 module.exports = {
 
-    //Erros Response Function
+    //Errorsss Response Function
     errorResponse: function(err,res) {
         res.status(err.status || 500);
         res.end(JSON.stringify({
@@ -12,7 +12,7 @@ module.exports = {
     },
 
 
-    //Sucess Response Function
+    //Success Response Function
     successResponse: function(message,res,data) {
         res.status(200);
         res.end(JSON.stringify({

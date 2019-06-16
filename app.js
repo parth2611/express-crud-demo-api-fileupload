@@ -67,7 +67,6 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true })
 .then(() => console.log('connection succesful'))
 .catch((err) => console.error(err))
-
 //DB Connection End
 
  
@@ -75,13 +74,6 @@ mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true })
 app.use('/index', indexRouter);
 app.use('/', usersRouter);
  
-
-
- 
-
-
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
